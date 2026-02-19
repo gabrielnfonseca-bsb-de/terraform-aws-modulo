@@ -9,3 +9,8 @@ variable "cidr_block" {
   # ->Dessa forma, o Terraform vai exigir que o usuário forneça um valor para cidr_block na hora de executar o plano ou a aplicação, garantindo que o valor seja definido explicitamente.
   # ->Então, se você quer que a pessoa seja obrigada a informar o valor, você simplesmente remove o default.
 }
+
+variable "project_name" {
+  type        = string
+  description = "Project name to be used in tags"
+}
